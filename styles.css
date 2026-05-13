@@ -101,9 +101,15 @@ h3 { font-size: 1.2rem; }
 }
 .check-list.compact { gap: 10px; }
 .check-list.cols { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 22px; }
+.hero-visual-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 18px;
+}
 .hero-support-wrap {
-  margin-top: 22px;
-  max-width: 320px;
+  max-width: 560px;
+  width: 100%;
 }
 .hero-support-image {
   display: block;
@@ -193,6 +199,7 @@ details p { color: var(--muted); margin: 12px 0 0; }
   .section { padding: 70px 0; }
   .hero { padding-top: 52px; }
   h1 { max-width: 100%; }
+  .hero-visual-stack,
   .hero-support-wrap,
   .hero-image-card {
     max-width: 100%;
