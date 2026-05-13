@@ -69,7 +69,7 @@ nav a { color: var(--muted); font-weight: 500; }
 }
 .hero-grid, .two-col {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
+  grid-template-columns: 1.15fr 0.85fr;
   gap: 44px;
   align-items: center;
 }
@@ -104,14 +104,18 @@ h3 { font-size: 1.2rem; }
 .hero-image-card {
   position: relative;
   overflow: hidden;
-  min-height: 520px;
+  min-height: 500px;
+  max-width: 390px;
+  width: 100%;
+  justify-self: end;
 }
 .hero-image {
   display: block;
   width: 100%;
   height: 100%;
-  min-height: 520px;
+  min-height: 500px;
   object-fit: cover;
+  object-position: 65% top;
 }
 .hero-image-badge {
   position: absolute;
@@ -191,7 +195,11 @@ details p { color: var(--muted); margin: 12px 0 0; }
   .hero { padding-top: 52px; }
   h1 { max-width: 100%; }
   .hero-image-card,
-  .hero-image { min-height: 360px; }
+  .hero-image {
+    min-height: 360px;
+    max-width: 100%;
+    justify-self: stretch;
+  }
   .hero-image-badge {
     left: 16px;
     right: 16px;
