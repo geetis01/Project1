@@ -144,6 +144,8 @@ h3 { font-size: 1.2rem; }
   object-position: center top;
 }
 .section { padding: 86px 0; }
+.hero + .section { padding-top: 56px; }
+.section + .section { padding-top: 56px; }
 .muted { background: var(--soft); }
 .card { padding: 26px; }
 .card-grid {
@@ -198,6 +200,8 @@ details p { color: var(--muted); margin: 12px 0 0; }
   .hero-grid, .two-col, .card-grid.four, .card-grid.three, .steps { grid-template-columns: 1fr; }
   .check-list.cols { grid-template-columns: 1fr; }
   .section { padding: 70px 0; }
+  .hero + .section,
+  .section + .section { padding-top: 42px; }
   .hero { padding-top: 52px; }
   h1 { max-width: 100%; }
   .hero-visual-stack,
