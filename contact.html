@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Google Business Profile Posting Service</title>
+  <meta name="description" content="Contact us to get started with Google Business Profile posting services for your local business." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav">
+      <div class="brand">
+        <div class="brand-mark">G</div>
+        <div>
+          <strong>GBP Posting Service</strong>
+          <span>Local Visibility Support</span>
+        </div>
+      </div>
+      <nav>
+        <a href="index.html#services">Services</a>
+        <a href="index.html#pricing">Pricing</a>
+        <a href="index.html#faq">FAQ</a>
+        <a href="contact.html" class="btn btn-small">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero contact-hero">
+      <div class="container narrow center">
+        <p class="eyebrow">CONTACT PAGE</p>
+        <h1 class="contact-title">Let’s Get Your Google Business Profile Posting Plan Started</h1>
+        <p class="lead contact-lead">Tell us a little about your business, what plan you’re interested in, and what you want help with. We’ll point you in the right direction fast.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div class="card contact-card">
+          <h2>Quick Contact Options</h2>
+          <p>Choose the fastest path that works for you.</p>
+          <div class="contact-actions">
+            <a class="btn btn-block" href="mailto:kellysreviews@agentmail.to?subject=Google%20Business%20Profile%20Posting%20Service">Email About GBP Posting</a>
+            <a class="btn btn-secondary btn-block" href="mailto:kellysreviews@agentmail.to?subject=Starter%20GBP%20Plan%20Inquiry">Ask About Starter</a>
+            <a class="btn btn-secondary btn-block" href="mailto:kellysreviews@agentmail.to?subject=Growth%20GBP%20Plan%20Inquiry">Ask About Growth</a>
+            <a class="btn btn-secondary btn-block" href="mailto:kellysreviews@agentmail.to?subject=Authority%20GBP%20Plan%20Inquiry">Ask About Authority</a>
+          </div>
+          <ul class="check-list compact contact-list">
+            <li>Email: kellysreviews@agentmail.to</li>
+            <li>Best for local businesses that want hands-off Google posting</li>
+            <li>Great fit for churches, contractors, shops, and local service businesses</li>
+          </ul>
+        </div>
+
+        <div class="card contact-card">
+          <h2>Send a Project Request</h2>
+          <p>Fill this out and click send. It opens your email with everything prefilled.</p>
+          <form id="contactForm" class="contact-form">
+            <label>
+              Your Name
+              <input type="text" id="name" placeholder="Your name" required>
+            </label>
+            <label>
+              Business Name
+              <input type="text" id="business" placeholder="Business name" required>
+            </label>
+            <label>
+              Email Address
+              <input type="email" id="email" placeholder="you@example.com" required>
+            </label>
+            <label>
+              Interested Plan
+              <select id="plan">
+                <option>Starter - $59/Month</option>
+                <option>Growth - $99/Month</option>
+                <option>Authority - $139/Month</option>
+                <option>Custom Plan</option>
+              </select>
+            </label>
+            <label>
+              What do you need help with?
+              <textarea id="message" rows="6" placeholder="Tell us about your business, goals, service area, and what you want us to help with."></textarea>
+            </label>
+            <button type="submit" class="btn btn-block">Send My Request</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const business = document.getElementById('business').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const plan = document.getElementById('plan').value;
+      const message = document.getElementById('message').value.trim();
+      const subject = encodeURIComponent('GBP Posting Service Request - ' + business);
+      const body = encodeURIComponent(
+        'Name: ' + name + '\n' +
+        'Business: ' + business + '\n' +
+        'Email: ' + email + '\n' +
+        'Interested Plan: ' + plan + '\n\n' +
+        'Project Details:\n' + message
+      );
+      window.location.href = 'mailto:kellysreviews@agentmail.to?subject=' + subject + '&body=' + body;
+    });
+  </script>
+</body>
+</html>
