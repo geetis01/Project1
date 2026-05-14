@@ -73,6 +73,22 @@
               <input type="email" id="email" placeholder="you@example.com" required>
             </label>
             <label>
+              Phone #
+              <input type="text" id="phone" placeholder="(555) 555-5555">
+            </label>
+            <label>
+              Address
+              <input type="text" id="address" placeholder="Street address">
+            </label>
+            <label>
+              City
+              <input type="text" id="city" placeholder="City">
+            </label>
+            <label>
+              Zip
+              <input type="text" id="zip" placeholder="Zip code">
+            </label>
+            <label>
               Interested Plan
               <select id="plan">
                 <option>Starter - $59/Month</option>
@@ -98,6 +114,10 @@
       const name = document.getElementById('name').value.trim();
       const business = document.getElementById('business').value.trim();
       const email = document.getElementById('email').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const address = document.getElementById('address').value.trim();
+      const city = document.getElementById('city').value.trim();
+      const zip = document.getElementById('zip').value.trim();
       const plan = document.getElementById('plan').value;
       const message = document.getElementById('message').value.trim();
       const subject = encodeURIComponent('GBP Posting Service Request - ' + business);
@@ -105,6 +125,10 @@
         'Name: ' + name + '\n' +
         'Business: ' + business + '\n' +
         'Email: ' + email + '\n' +
+        'Phone: ' + phone + '\n' +
+        'Address: ' + address + '\n' +
+        'City: ' + city + '\n' +
+        'Zip: ' + zip + '\n' +
         'Interested Plan: ' + plan + '\n\n' +
         'Project Details:\n' + message
       );
