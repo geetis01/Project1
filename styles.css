@@ -182,6 +182,13 @@ h3 { font-size: 1.2rem; }
 .pricing-section { background: linear-gradient(180deg, #ffffff, #f8fafc); }
 .pricing-card { position: relative; }
 .pricing-card .price { font-size: 1.5rem; font-weight: 800; color: var(--text); margin-bottom: 16px; }
+.plan-price-note {
+  margin: 12px 0 0;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--primary);
+}
 .pricing-card.featured { border-color: var(--primary); transform: translateY(-6px); }
 .tag {
   position: absolute; top: -12px; left: 24px; padding: 6px 10px; border-radius: 999px; background: var(--primary); color: white; font-size: 0.78rem; font-weight: 700;
